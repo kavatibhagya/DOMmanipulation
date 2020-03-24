@@ -59,7 +59,7 @@
 
 // parent node //
 
-// const itemList = document.querySelector('#items');
+ const itemList = document.querySelector('#items');
 // console.log(itemList);
 // console.log(itemList.parentNode);
 // console.log(itemList.parentNode.parentNode);
@@ -68,11 +68,38 @@
 // parentelement //
 
 
-const itemList = document.querySelector('#items');
-console.log(itemList);
-console.log(itemList.parentElement);
-console.log(itemList.parentElement.parentElement);
-itemList.parentElement.style.fontFamily = 'italian';
+// const itemList = document.querySelector('#items');
+// console.log(itemList);
+// console.log(itemList.parentElement);
+// console.log(itemList.parentElement.parentElement);
+// itemList.parentElement.style.fontFamily = 'italian';
+
+
+// childnode //
+ console.log(itemList.childNodes)
+
+
+//children //
+
+console.log(itemList.children);
+itemList.children[1].style.backgroundColor = 'yellow';
+
+
+//firstchild //
+ console.log(itemList.firstChild);
+
+//firstChildElement //
+console.log(itemList.firstElementChild);
+itemList.firstElementChild.textContent = 'bhagya';
+ // lastChild //
+ console.log(itemList.lastChild);
+   
+ // lastElementChild //
+
+ console.log(itemList.lastElementChild);
+
+ itemList.lastElementChild.textContent = 'raju';
+
 
 
 
