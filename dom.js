@@ -47,12 +47,35 @@
 
 // querySelectorAll //
 
- const titles = document.querySelectorAll('.title');
- console.log(titles);
- titles[1].innerText = 'hello babe';
- const odd = document.querySelectorAll('.list-group-item:nth-child(odd)');
- const even = document.querySelectorAll('.list-group-item:nth-child(even)');
- for(i=0; i< odd.length; i++){
-     odd[i].style.backgroundColor = '#ccc';
-     even[i].style.backgroundColor = '#f4f4f4';
- }
+//  const titles = document.querySelectorAll('.title');
+//  console.log(titles);
+//  titles[1].innerText = 'hello babe';
+//  const odd = document.querySelectorAll('.list-group-item:nth-child(odd)');
+//  const even = document.querySelectorAll('.list-group-item:nth-child(even)');
+//  for(i=0; i< odd.length; i++){
+//      odd[i].style.backgroundColor = '#ccc';
+//      even[i].style.backgroundColor = '#f4f4f4';    
+//  }
+
+// parent node //
+
+// const itemList = document.querySelector('#items');
+// console.log(itemList);
+// console.log(itemList.parentNode);
+// console.log(itemList.parentNode.parentNode);
+// itemList.parentNode.style.fontFamily = 'italian';
+
+// parentelement //
+
+
+const itemList = document.querySelector('#items');
+console.log(itemList);
+console.log(itemList.parentElement);
+console.log(itemList.parentElement.parentElement);
+itemList.parentElement.style.fontFamily = 'italian';
+
+
+
+
+
+
