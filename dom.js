@@ -108,19 +108,31 @@
 
 //createElement
 // create div 
-var newDiv = document.createElement('div');
-console.log(newDiv);
-// adding className
-newDiv.className = 'hello';
-// adding id
-newDiv.id = 'helloId';
-// adding attribute
-newDiv.setAttribute('title' , 'helloDiv');
-// create text node
-var newDivText = document.createTextNode('hello world');
+ var newDiv = document.createElement('div');
+ console.log(newDiv);
+//  adding className
+ newDiv.className = 'hello';
 
-newDiv.appendChild(newDivText);
-console.log(newDiv);
+//  adding id
+ newDiv.id = 'helloId';
+
+// adding attribute
+ newDiv.setAttribute('title' , 'helloDiv');
+
+//  create text node
+ var newDivText = document.createTextNode('hello world');
+
+// adding text to node
+ newDiv.appendChild(newDivText);
+ console.log(newDiv);
+ 
+var container = document.querySelector('header .container' );
+var h1 = document.querySelector('header h1');
+newDiv.style.fontSize = '30px';
+
+container.insertBefore(newDiv, h1);
+
+
 
 
 
