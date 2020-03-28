@@ -139,8 +139,22 @@
 //       document.querySelector('#header-title').textContent = 'Changed';
 //       document.querySelector('#main').style.backgroundColor = '#758484';
 //     // console.log('button clcicked');
-}
+//}
+// RUN EVENTS //
+const button = document.querySelector('#button');
+const box = document.querySelector('#box');
+// addEventListener('click', runEvent);
 
+button.addEventListener('dblclick', runEvent);
+button.addEventListener('mousedown', runEvent);
+button.addEventListener('mouseup', runEvent);
+ box.addEventListener('mouseenter', runEvent);
+box.addEventListener('mouseover', runEvent);
+box.addEventListener('mouseout', runEvent);
+box.addEventListener('mouseleave', runEvent);
+function runEvent(e){
+  console.log('EVENT TYPE:' +e.type);
+}
 
 
 
