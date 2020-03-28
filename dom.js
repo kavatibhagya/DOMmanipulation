@@ -76,29 +76,51 @@
 
 
 // childnode //
- console.log(itemList.childNodes)
+// console.log(itemList.childNodes)
 
 
-//children //
+// children //
 
-console.log(itemList.children);
-itemList.children[1].style.backgroundColor = 'yellow';
+// console.log(itemList.children);
+// itemList.children[1].style.backgroundColor = 'yellow';
 
 
-//firstchild //
- console.log(itemList.firstChild);
+// firstchild //
+// console.log(itemList.firstChild);
 
-//firstChildElement //
-console.log(itemList.firstElementChild);
-itemList.firstElementChild.textContent = 'bhagya';
- // lastChild //
- console.log(itemList.lastChild);
+// firstChildElement //
+// console.log(itemList.firstElementChild);
+// itemList.firstElementChild.textContent = 'bhagya';
+
+// lastChild //
+// console.log(itemList.lastChild);
    
- // lastElementChild //
+// lastElementChild //
+// console.log(itemList.lastElementChild);
+// itemList.lastElementChild.textContent = 'raju';
 
- console.log(itemList.lastElementChild);
+// previous sibling
+// console.log(itemList.previousSibling);
 
- itemList.lastElementChild.textContent = 'raju';
+// previous Elementsibling
+//  console.log(itemList.previousElementSibling);
+//  itemList.previousElementSibling.style.color = 'purple';
+
+//createElement
+// create div 
+var newDiv = document.createElement('div');
+console.log(newDiv);
+// adding className
+newDiv.className = 'hello';
+// adding id
+newDiv.id = 'helloId';
+// adding attribute
+newDiv.setAttribute('title' , 'helloDiv');
+// create text node
+var newDivText = document.createTextNode('hello world');
+
+newDiv.appendChild(newDivText);
+console.log(newDiv);
 
 
 
