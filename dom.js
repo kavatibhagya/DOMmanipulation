@@ -133,7 +133,7 @@
 // container.insertBefore(newDiv, h1);
  
 // // EVENTS //
-// const button = document.querySelector('#button').addEventListener('click', buttonclick);
+// const button = document.querySelector('#button').addEventListener('click', buttonclick); 
 // function buttonclick(){
 
 //       document.querySelector('#header-title').textContent = 'Changed';
@@ -153,7 +153,7 @@
 // box.addEventListener('mouseout', runEvent);
 // box.addEventListener('mouseleave', runEvent);
 //const itemInput = document.querySelector('input[type="text"]');
- const form = document.querySelector('form');
+ // const form = document.querySelector('form');
 // itemInput.addEventListener('input', runEvent);
 // itemInput.addEventListener('keyup', runEvent);
 // itemInput.addEventListener('keydown', runEvent);
@@ -161,16 +161,16 @@
 // itemInput.addEventListener('blur', runEvent);
 // const select = document.querySelector('select');
 // select.addEventListener('change', runEvent);
-form.addEventListener('submit', runEvent);
+//form.addEventListener('submit', runEvent);
 
 
-function runEvent(e){
-  e.preventDefault();
-  console.log('EVENT TYPE:' +e.type);
+// function runEvent(e){
+//   e.preventDefault();
+//   console.log('EVENT TYPE:' +e.type);
   // console.log(e.target.value);
   // const box = document.querySelector('#box');
   // document.getElementById('box').innerText = e.target.value;
-}
+//}
 
 
 
